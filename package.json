@@ -1,0 +1,45 @@
+{
+  "name": "devicesDiscover",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start:windows": "node node_modules/react-native/local-cli/cli.js run-windows",
+		"bundle:windows": "react-native bundle --platform windows --entry-file index.windows.js --bundle-output windows/devicesDiscover/ReactAssets/index.windows.bundle --assets-dest windows/devicesDiscover/ReactAssets",
+		"test": "jest",
+    "web-watch": "webpack --progress --colors --watch",
+    "rn-watch": "tsc --watch"
+  },
+  "dependencies": {
+    "react": "~15.4.1",
+    "react-addons-perf": "15.4.1",
+    "react-dom": "~15.4.1",
+    "react-native": "0.42.3",
+    "react-native-windows": "^0.42.0",
+    "reactxp": "^0.42.0-rc.1",
+    "resub": "^0.0.12",
+    "simplerestclients": "^0.0.11",
+    "synctasks": "^0.2.17"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.14",
+    "@types/webpack": "^2.2.15",
+    "awesome-typescript-loader": "3.1.2",
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "19.0.2",
+    "react-addons-test-utils": "15.4.1",
+    "react-test-renderer": "~15.4.1",
+    "rnpm-plugin-windows": "^0.2.4",
+    "source-map-loader": "^0.1.6",
+    "ts-node": "^3.0.2",
+    "tslint": "^5.1.0",
+    "tslint-react": "^3.0.0",
+    "typescript": "",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
